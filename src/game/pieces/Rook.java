@@ -1,5 +1,7 @@
 package game.pieces;
 
+import game.main.Game ;
+
 public class Rook {
 
     private boolean isWhite;
