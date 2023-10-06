@@ -15,7 +15,6 @@ public class Game {
     }
 
     private void setupInitialPosition() {
-
         board[0][0] = "♖";
         board[0][1] = "♘";
         board[0][2] = "♗";
@@ -65,6 +64,7 @@ public class Game {
 
         System.out.println("   a  b  c  d  e  f  g  h ");
     }
+
 
 
     private boolean isValidSquare(int row, int col) {
@@ -172,7 +172,7 @@ public class Game {
             case "Pawn":
             case "pawn": {
                 Pawn pawn = new Pawn(isWhiteTurn);
-                return pawn.isValidMove(fromRow, fromCol, toRow, toCol, board,pieceType);
+                return pawn.isValidMove(fromRow, fromCol, toRow, toCol, board, pieceType);
             }
             case "Rook" :
             case "rook" :{
